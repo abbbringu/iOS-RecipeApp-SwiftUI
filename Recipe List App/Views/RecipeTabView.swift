@@ -9,7 +9,22 @@ import SwiftUI
 
 struct RecipeTabView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            Text("Featured")
+                .tabItem {
+                    VStack{
+                        Image(systemName: "star.fill")
+                        Text("Featured")
+                    }
+                }
+            RecipeListView()
+                .tabItem {
+                    VStack{
+                        Image(systemName: "list.bullet")
+                        Text("List")
+                    }
+                }
+        }
     }
 }
 
