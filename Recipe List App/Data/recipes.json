@@ -8,20 +8,90 @@
         "cookTime": "35 minutes",
         "totalTime": "1 hour",
         "servings": 10,
+        "highlights": [
+            "Vegetarian",
+            "Healthy",
+            "Easy clean-up"
+        ],
         "ingredients": [
-            "3 Eggplant, peeled and thinly sliced",
-            "3 Large eggs",
-            "4 cups Italian seasoned bread crumbs",
-            "6 cups Spaghetti sauce",
-            "2 cups Mozarella cheese, shredded",
-            "1/2 cup Parmesan cheese, grated",
-            "1/2 teaspoon Dried basil"
+            {"name": "Eggplant, peeled and thinly sliced", "num": 3},
+            {"name": "Large eggs", "num": 2},
+            {"name": "Italian seasoned bread crumbs", "num": 4, "unit": "cup"},
+            {"name": "Spaghetti sauce", "num": 6, "unit": "cup"},
+            {"name": "Mozarella cheese, shredded", "num": 2, "unit": "cup"},
+            {"name": "Parmesan cheese, grated", "num": 1, "denom": 2, "unit": "cup"},
+            {"name": "Dried basil", "num": 1, "denom": 2, "unit": "teaspoon"}
         ],
         "directions": [
             "Preheat oven to 350 degrees F (175 degrees C).",
             "Dip eggplant slices in egg, then in bread crumbs. Place in a single layer on a baking sheet. Bake in preheated oven for 5 minutes on each side.",
             "In a 9x13 inch baking dish spread spaghetti sauce to cover the bottom. Place a layer of eggplant slices in the sauce. Sprinkle with mozzarella and Parmesan cheeses. Repeat with remaining ingredients, ending with the cheeses. Sprinkle basil on top.",
             "Bake in preheated oven for 35 minutes, or until golden brown."
+        ]
+    },
+    {
+        "name": "Mushroom Risotto",
+        "featured": true,
+        "image" : "mushroom risotto",
+        "description": "Authentic Italian-style risotto cooked the slow and painful way, but oh so worth it. ",
+        "prepTime": "20 minutes",
+        "cookTime": "30 minutes",
+        "totalTime": "50 minutes",
+        "servings": 6,
+        "highlights": [
+            "Creamy",
+            "Vegetarian"
+        ],
+        "ingredients": [
+            {"name": "Chicken broth", "num": 6, "unit": "cup"},
+            {"name": "Olive oil", "num": 3, "unit": "tablespoon"},
+            {"name": "Portobello mushrooms", "num": 1, "unit": "pound"},
+            {"name": "White mushrooms", "num": 1, "unit": "pound"},
+            {"name": "Shallots, diced", "num": 2},
+            {"name": "Arborio rice", "num": 3, "denom": 2, "unit": "cup"},
+            {"name": "Dry white wine", "num": 1, "denom": 2, "unit": "cup"},
+            {"name": "Sea salt", "unit": "To taste"},
+            {"name": "Black pepper", "unit": "To taste"},
+            {"name": "Chives, finely chopped", "num": 3, "unit": "tablespoon"},
+            {"name": "Butter", "num": 4, "unit": "tablespoon"},
+            {"name": "Parmesan cheese", "num": 1, "denom": 3, "unit": "cup"}
+        ],
+        "directions": [
+            "In a saucepan, warm the broth over low heat.",
+            "Warm 2 tablespoons olive oil in a large saucepan over medium-high heat. Stir in the mushrooms, and cook until soft, about 3 minutes. Remove mushrooms and their liquid, and set aside.",
+            "Add 1 tablespoon olive oil to skillet, and stir in the shallots. Cook 1 minute. Add rice, stirring to coat with oil, about 2 minutes. When the rice has taken on a pale, golden color, pour in wine, stirring constantly until the wine is fully absorbed. Add 1/2 cup broth to the rice, and stir until the broth is absorbed. Continue adding broth 1/2 cup at a time, stirring continuously, until the liquid is absorbed and the rice is al dente, about 15 to 20 minutes.",
+            "Remove from heat, and stir in mushrooms with their liquid, butter, chives, and parmesan. Season with salt and pepper to taste."
+        ]
+    },
+    {
+        "name": "Baked Teriyaki Chicken",
+        "featured": false,
+        "image" : "chicken teriyaki",
+        "description": "A sweet and savory favourite.",
+        "prepTime": "30 minutes",
+        "cookTime": "1 hour",
+        "totalTime": "1 hour 30 minutes",
+        "servings": 6,
+        "highlights": [
+            "Low fat",
+            "Easy prep"
+        ],
+        "ingredients": [
+            {"name": "Cornstarch", "num": 1, "unit": "tablespoon"},
+            {"name": "Cold water", "num": 1, "unit": "tablespoon"},
+            {"name": "White sugar", "num": 1, "denom": 2, "unit": "cup"},
+            {"name": "Soy sauce", "num": 1, "denom": 2, "unit": "cup"},
+            {"name": "Cider vinegar", "num": 1, "denom": 4, "unit": "cup"},
+            {"name": "Garlic, minced", "num": 1, "unit": "clove"},
+            {"name": "Ground ginger", "num": 1, "denom": 2, "unit": "teaspoon"},
+            {"name": "Black pepper", "num": 1, "denom": 4, "unit": "teaspoon"},
+            {"name": "Boneless, skinless chicken thighs", "num": 12, "unit": "thigh"}
+        ],
+        "directions": [
+            "In a small saucepan over low heat, combine the cornstarch, cold water, sugar, soy sauce, vinegar, garlic, ginger and ground black pepper. Let simmer, stirring frequently, until sauce thickens and bubbles.",
+            "Preheat oven to 425 degrees F (220 degrees C).",
+            "Place chicken pieces in a lightly greased 9x13 inch baking dish. Brush chicken with the sauce. Turn pieces over, and brush again.",
+            "Bake in the preheated oven for 30 minutes. Turn pieces over, and bake for another 30 minutes, until no longer pink and juices run clear. Brush with sauce every 10 minutes during cooking."
         ]
     },
     {
@@ -38,26 +108,26 @@
             "Oven meal"
         ],
         "ingredients": [
-            "1 pound Italian Sausage",
-            "3/4 pound Ground beef",
-            "1/2 cup Diced onion",
-            "2 cloves Garlic",
-            "28 ounce Crushed tomatoes",
-            "12 ounce Tomato paste",
-            "13 ounce Tomato sauce",
-            "2 cups Water",
-            "2 tablespoon White sugar",
-            "2/3 tablespoon Dried basil leaves",
-            "1/2 teaspoon Fennel seeds",
-            "1 teaspoon Italian seasoning",
-            "2 teaspoon Salt",
-            "1/4 teaspoon Black pepper",
-            "4 tablespoon Fresh parsley, chopped",
-            "12 Lasagna noodles",
-            "16 ounce Ricotta cheese",
-            "1 Egg",
-            "3/4 pound Mozarella cheese",
-            "3/4 cup Parmesan cheese"
+            {"name": "Italian Sausage", "num": 1, "unit": "pound"},
+            {"name": "Ground beef", "num": 3, "denom": 4, "unit": "pound"},
+            {"name": "Diced onion", "num": 1, "denom": 2, "unit": "cup"},
+            {"name": "Garlic", "num": 2, "unit": "clove"},
+            {"name": "Crushed tomatoes", "num": 28, "unit": "ounce"},
+            {"name": "Tomato paste", "num": 12, "unit": "ounce"},
+            {"name": "Tomato sauce", "num": 13, "unit": "ounce"},
+            {"name": "Water", "num": 1, "denom": 2, "unit": "cup"},
+            {"name": "White sugar", "num": 2, "unit": "tablespoon"},
+            {"name": "Dried basil leaves", "num": 3, "denom": 2, "unit": "tablespoon"},
+            {"name": "Fennel seeds", "num": 1, "denom": 2, "unit": "teaspoon"},
+            {"name": "Italian seasoning", "num": 1, "unit": "teaspoon"},
+            {"name": "Salt", "num": 3, "denom": 2, "unit": "teaspoon"},
+            {"name": "Black pepper", "num": 1, "denom": 4, "unit": "teaspoon"},
+            {"name": "Fresh parsley, chopped", "num": 4, "unit": "tablespoon"},
+            {"name": "Lasagna noodles", "num": 12},
+            {"name": "Ricotta cheese", "num": 16, "unit": "ounce"},
+            {"name": "Egg", "num": 1},
+            {"name": "Mozarella cheese", "num": 3, "denom": 4, "unit": "pound"},
+            {"name": "Parmesan cheese", "num": 3, "denom": 4, "unit": "cup"}
         ],
         "directions": [
             "In a Dutch oven, cook sausage, ground beef, onion, and garlic over medium heat until well browned. Stir in crushed tomatoes, tomato paste, tomato sauce, and water. Season with sugar, basil, fennel seeds, Italian seasoning, 1 teaspoon salt, pepper, and 2 tablespoons parsley. Simmer, covered, for about 1 1/2 hours, stirring occasionally.",
@@ -82,23 +152,23 @@
             "Make it your own"
         ],
         "ingredients": [
-            "8 ounce Flat rice noodles",
-            "3 tablespoon Fish sauce",
-            "1/4 cup Fresh lime juice",
-            "1 tablespoon White sugar",
-            "2 tablespoon Oyster sauce",
-            "1 1/2 tablespoon Asian chile pepper sauce",
-            "1/4 cup Chicken stock",
-            "1/4 cup Vegetable oil",
-            "1 tablespoon Chopped garlic",
-            "8 ounce Medium shrimp",
-            "8 ounce Boneless, skinless chicken breast, cubed",
-            "2 Large eggs, beaten",
-            "3 cup Bean sprouts",
-            "6 Green onions, chopped",
-            "2 tablespoon Unsalted, roasted peanuts, chopped",
-            "1/4 cup Fresh cilantro, chopped",
-            "8 Lime wedges"
+            {"name": "Flat rice noodles", "num": 8, "unit": "ounce"},
+            {"name": "Fish sauce", "num": 3, "unit": "tablespoon"},
+            {"name": "Fresh lime juice", "num": 1, "denom": 4, "unit": "cup"},
+            {"name": "White sugar", "num": 1, "unit": "tablespoon"},
+            {"name": "Oyster sauce", "num": 2, "unit": "tablespoon"},
+            {"name": "Asian chile pepper sauce", "num": 3, "denom": 2, "unit": "tablespoon"},
+            {"name": "Chicken stock", "num": 1, "denom": 4, "unit": "cup"},
+            {"name": "Vegetable oil", "num": 1, "denom": 4, "unit": "cup"},
+            {"name": "Chopped garlic", "num": 1, "unit": "tablespoon"},
+            {"name": "Medium shrimp, peeled and deveined", "num": 8, "unit": "ounce"},
+            {"name": "Boneless, skinless chicken breast, cubed", "num": 8, "unit": "ounce"},
+            {"name": "Large eggs, beaten", "num": 2},
+            {"name": "Bean sprouts", "num": 3, "unit": "cup"},
+            {"name": "Green onions, chopped", "num": 6},
+            {"name": "Unsalted, roasted peanuts, chopped", "num": 2, "unit": "tablespoon"},
+            {"name": "Fresh cilantro, chopped", "num": 1, "denom": 4, "unit": "cup"},
+            {"name": "Lime wedges", "num": 8}
         ],
         "directions": [
             "Fill a large bowl with hot tap water and place the noodles in it to soak for 20 minutes.",
@@ -122,13 +192,13 @@
             "Gluten free"
         ],
         "ingredients": [
-            "4 half Skinless, boneless chicken breast",
-            "1 cup Teriyaki marinade sauce",
-            "1/2 pound Bacon",
-            "2 tablespoon Butter",
-            "1 Onion, cut into long slices",
-            "8 ounce Fresh mushrooms, coarsely chopped",
-            "4 slice Mozarella cheese"
+            {"name": "Skinless, boneless chicken breast", "num": 4, "unit": "half"},
+            {"name": "Teriyaki marinade sauce", "num": 1, "unit": "cup"},
+            {"name": "Bacon", "num": 1, "denom": 2, "unit": "pound"},
+            {"name": "Butter", "num": 2, "unit": "tablespoon"},
+            {"name": "Onion, cut into long slices", "num": 1},
+            {"name": "Fresh mushrooms, coarsely chopped", "num": 8, "unit": "ounce"},
+            {"name": "Mozarella cheese", "num": 4, "unit": "slice"}
         ],
         "directions": [
             "To Marinate: Place chicken in a nonporous glass dish or bowl. Pour marinade over chicken and toss to coat. Cover and refrigerate to marinate for 1 to 2 hours.",
@@ -152,17 +222,17 @@
             "Filling"
         ],
         "ingredients": [
-            "4 Russet potatoes",
-            "2 teaspoon Vegetable oil",
-            "3 tablespoon Butter",
-            "1 tablespoon Green onion, minced",
-            "Salt and pepper to taste",
-            "1 pinch Cayenne pepper",
-            "2 cups Cheddar cheese, shredded",
-            "1/2 cup Heavy cream",
-            "1 Egg yolk",
-            "1 tablespoon Butter, melted",
-            "1 teaspoon Paprika"
+            {"name": "Russet potatoes", "num": 4},
+            {"name": "Vegetable oil", "num": 2, "unit": "teaspoon"},
+            {"name": "Butter", "num": 3, "unit": "tablespoon"},
+            {"name": "Green onion, minced", "num": 1, "unit": "tablespoon"},
+            {"name": "Salt and pepper", "unit": "To taste"},
+            {"name": "Cayenne pepper", "num": 1, "unit": "pinch"},
+            {"name": "Cheddar cheese, shredded", "num": 1, "denom": 2, "unit": "cup"},
+            {"name": "Heavy cream", "num": 1, "denom": 2, "unit": "cup"},
+            {"name": "Egg yolk", "num": 1},
+            {"name": "Butter, melted", "num": 1, "unit": "tablespoon"},
+            {"name": "Paprika", "num": 1, "unit": "teaspoon"}
         ],
         "directions": [
             "Preheat oven to 400 degrees F (200 degrees C). Line a baking sheet with aluminum foil.",
@@ -175,3 +245,4 @@
         ]
     }
 ]
+
