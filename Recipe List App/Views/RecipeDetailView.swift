@@ -22,6 +22,12 @@ struct RecipeDetailView: View {
                     Image(recipe.image)
                         .resizable()
                         .scaledToFill()
+                    
+                    Text(recipe.name)
+                        .font(.largeTitle)
+                        .bold()
+                        .padding(.leading)
+                    
                     VStack (alignment: .leading){
                         Text("Choose your proportion size:")
                             .font(.subheadline)
@@ -35,7 +41,7 @@ struct RecipeDetailView: View {
                         .frame(width: geo.size.width / 1.5)
                         .pickerStyle(.segmented)
                     }
-                    .padding()
+                    .padding([.leading,.bottom,.trailing])
                     
                     Divider()
                     // MARK: Ingredients
@@ -71,7 +77,6 @@ struct RecipeDetailView: View {
                     .padding(.horizontal)
                 }
             }
-            .navigationBarTitle(recipe.name)
         }
     }
 }
