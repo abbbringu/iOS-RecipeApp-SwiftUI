@@ -10,6 +10,7 @@ import SwiftUI
 struct FeaturedView: View {
     @EnvironmentObject var model:RecipeModel
     @State var isShowDetails = false
+    @State var tabIndex = 0
     
     var body: some View {
         VStack (alignment: .leading, spacing: 0){
@@ -21,7 +22,7 @@ struct FeaturedView: View {
                 .padding(.top, 40)
             
             GeometryReader { geo in
-                TabView {
+                TabView (selection: $tabIndex) {
                     ForEach (0 ..< model.recipes.count) { r in
                         
                         if model.recipes[r].featured {
@@ -42,8 +43,9 @@ struct FeaturedView: View {
                                     }
                                 }
                             }
+                            .tag(r)
                             .sheet(isPresented: $isShowDetails, content: {
-                                RecipeDetailView(recipe: model.recipes[r])
+                                RecipeDetailView(recipe: model.recipes[tabIndex])
                             })
                             .buttonStyle(PlainButtonStyle())
                             .frame(width: geo.size.width - 40,
@@ -62,14 +64,25 @@ struct FeaturedView: View {
             VStack(alignment: .leading, spacing: 10){
                 Text("Preperation Time")
                     .font(.headline)
-                Text("1 hour")
+                Text(model.recipes[tabIndex].prepTime)
                 Text("Highlights")
                     .font(.headline)
-                Text("Healthy and good")
+                highlightView(highlights: model.recipes[tabIndex].highlights)
             }
             .padding(.leading)
             .padding(.bottom)
         }
+        .onAppear {
+            getFirstFeaturedIndex()
+        }
+    }
+    
+    func getFirstFeaturedIndex() {
+        let index = model.recipes.firstIndex { (recipe) -> Bool in
+            return recipe.featured
+        }
+        
+        tabIndex = index ?? 0
     }
 }
 
