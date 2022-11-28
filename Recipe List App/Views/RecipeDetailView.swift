@@ -10,50 +10,69 @@ import SwiftUI
 struct RecipeDetailView: View {
     
     var recipe:Recipe
+    @State var portionSize = 4
     
     var body: some View {
         
-        ScrollView {
-        
-            VStack (alignment: .leading) {
-                
-                // MARK: Recipe Image
-                Image(recipe.image)
-                    .resizable()
-                    .scaledToFill()
-                
-                // MARK: Ingredients
-                VStack(alignment: .leading) {
-                    Text("Ingredients")
-                        .font(.headline)
-                        .padding([.bottom, .top], 5)
+        GeometryReader { geo in
+            ScrollView {
+                VStack (alignment: .leading) {
                     
-                    ForEach (recipe.ingredients) { item in
-                        Text("• " + item.name)
+                    // MARK: Recipe Image
+                    Image(recipe.image)
+                        .resizable()
+                        .scaledToFill()
+                    VStack (alignment: .leading){
+                        Text("Choose your proportion size:")
+                            .font(.subheadline)
+                            .foregroundColor(Color(red: 0, green: 0, blue: 0, opacity: 0.8))
+                        Picker("Portion size", selection: $portionSize) {
+                            Text("2").tag(2)
+                            Text("4").tag(4)
+                            Text("6").tag(6)
+                            Text("8").tag(8)
+                        }
+                        .frame(width: geo.size.width / 1.5)
+                        .pickerStyle(.segmented)
                     }
-                }
-                .padding(.horizontal)
-                
-                // MARK: Divider
-                Divider()
-                
-                // MARK: Directions
-                VStack(alignment: .leading) {
-                    Text("Directions")
-                        .font(.headline)
-                        .padding([.bottom, .top], 5)
+                    .padding()
                     
-                    ForEach(0..<recipe.directions.count, id: \.self) { index in
+                    Divider()
+                    // MARK: Ingredients
+                    VStack(alignment: .leading) {
+                        Text("Ingredients")
+                            .font(.headline)
+                            .padding([.bottom, .top], 5)
                         
-                        Text(String(index+1) + ". " + recipe.directions[index])
-                            .padding(.bottom, 5)
+                        ForEach (recipe.ingredients) { item in
+                            Text("• " + RecipeModel.getPorportion(ingredient: item,
+                                                                  recipeServing: recipe.servings,
+                                                                  targetServing: portionSize) + " " + item.name.lowercased())
+                            // RecipeModel.getPorportion(ingredients: item, recipeServing: recipe.servings, targetServing: portionSize) +
+                        }
                     }
+                    .padding(.horizontal)
+                    
+                    // MARK: Divider
+                    Divider()
+                    
+                    // MARK: Directions
+                    VStack(alignment: .leading) {
+                        Text("Directions")
+                            .font(.headline)
+                            .padding([.bottom, .top], 5)
+                        
+                        ForEach(0..<recipe.directions.count, id: \.self) { index in
+                            
+                            Text(String(index+1) + ". " + recipe.directions[index])
+                                .padding(.bottom, 5)
+                        }
+                    }
+                    .padding(.horizontal)
                 }
-                .padding(.horizontal)
             }
-            
+            .navigationBarTitle(recipe.name)
         }
-        .navigationBarTitle(recipe.name)
     }
 }
 
