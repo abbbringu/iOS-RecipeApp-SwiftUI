@@ -1,6 +1,6 @@
 # Simple recipe app from Tutorial. 
 <div align="center">
-<img src="./Images/deviceframes(1).png" alt="drawing" width="700"/>
+<img src="./Images/deviceframes(1).png" alt="drawing" width="1000"/>
 </div>
 
 
