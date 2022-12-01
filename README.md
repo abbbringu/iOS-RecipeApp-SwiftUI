@@ -5,8 +5,8 @@
 
 
 ## Description
-This is a simple app made from following a tutorial. The tutorial is part of a IOS foundations course. This app uses a MVVM strucutre and introduces different 
-IOS concepts. Apart from this app, several smaller app were made to grasp different concepts such as geometryReader, json parsing, tabview, pickers etc. 
+This is a simple app made from following a tutorial. The tutorial is part of a iOS foundations course. This app uses a MVVM strucutre and introduces different 
+iOS concepts. Apart from this app, several smaller app were made to grasp different concepts such as geometryReader, json parsing, tabview, pickers etc. 
 
 ## I learened:
 * MVVM structure
